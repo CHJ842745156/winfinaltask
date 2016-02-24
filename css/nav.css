@@ -104,6 +104,28 @@ body{
 	color: #9A9A9A;
 	margin-left: 11%;
 	float: left;
-	padding-top: 18px;
+	padding-top: 15px;
 	font-size: 12px;	
+}
+.head .inf .shoppingcart{
+	height: 27px;
+	color: #9A9A9A;
+	font-size: 12px;
+	float: right;
+	line-height: 27px;
+	padding-top: 10px;
+	margin-right: 8.8%;
+}
+.head .inf .shoppingcart span{
+	display: inline-block;
+	height: 27px;
+	overflow: hidden;
+}
+.head .inf .shoppingcart img{
+	display: inline-block;
+	height: 27px;
+}
+.head .inf .shoppingcart #itemnum{
+	color: #fff;
+	font-size: 16px;
 }
