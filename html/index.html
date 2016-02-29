@@ -54,22 +54,842 @@
 				<span id="getdate"></span>
 				<span>-Syrian prime minister defects,fighting gose on</span>
 			</div>
-			<div class="shoppingcart">
-				<span>Shopping Cart:</span>
-				<span id="itemnum"><b>0</b></span>
-				<span> item(s) -</span>
-				<span id="totalprice"></span>
-				<span><img src="../img/head/scan.png" alt=""></span>
+			<div class="shoppingcart">				
+				<div>
+					<span>Shopping Cart:</span>
+					<span id="itemnum"><b>0</b></span>
+					<span> item(s) -</span>
+					<span id="totalprice"></span>
+					<span onmouseover="showCart()" onmouseout="hideCart()"><img src="../img/head/scan.png" alt=""></span>
+				</div>	
+				<div class="flr hide" id="cartinfo" onmouseover="showCart()" onmouseout="hideCart()">
+					<table>
+						
+					</table>
+				</div>						
 			</div>
 		</div>
 	</div>
 
 	<div class="maincon">
-		
+		<!-- 滚动预览 -->
+		<div class="slider">
+			<div class="left fll">
+				<a href="javascript:mainconSliderCountDown();"><img src="../img/maincon/left.png" alt=""></a>
+			</div>
+			<!-- slider -->
+			<div id="slidercontainer"><div class="slidercon">
+					<img src="../img/maincon/sliderimg1.png" alt="">
+					<div class="intro">
+						<div class="title">
+							Where can I get some0?
+						</div>
+						<div class="text">
+							<img src="../img/maincon/slidertext.png" alt="">
+						</div>
+						<div>
+							<a href="#">
+								<img src="../img/maincon/shopnow.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div><div class="slidercon">
+					<img src="../img/maincon/sliderimg1.png" alt="">
+					<div class="intro">
+						<div class="title">
+							Where can I get some1?
+						</div>
+						<div class="text">
+							<img src="../img/maincon/slidertext.png" alt="">
+						</div>
+						<div>
+							<a href="#">
+								<img src="../img/maincon/shopnow.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div><div class="slidercon">
+					<img src="../img/maincon/sliderimg1.png" alt="">
+					<div class="intro">
+						<div class="title">
+							Where can I get some2?
+						</div>
+						<div class="text">
+							<img src="../img/maincon/slidertext.png" alt="">
+						</div>
+						<div>
+							<a href="#">
+								<img src="../img/maincon/shopnow.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div><div class="slidercon">
+					<img src="../img/maincon/sliderimg1.png" alt="">
+					<div class="intro">
+						<div class="title">
+							Where can I get some3?
+						</div>
+						<div class="text">
+							<img src="../img/maincon/slidertext.png" alt="">
+						</div>
+						<div>
+							<a href="#">
+								<img src="../img/maincon/shopnow.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div><div class="slidercon">
+					<img src="../img/maincon/sliderimg1.png" alt="">
+					<div class="intro">
+						<div class="title">
+							Where can I get some4?
+						</div>
+						<div class="text">
+							<img src="../img/maincon/slidertext.png" alt="">
+						</div>
+						<div>
+							<a href="#">
+								<img src="../img/maincon/shopnow.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div><div class="slidercon">
+					<img src="../img/maincon/sliderimg1.png" alt="">
+					<div class="intro">
+						<div class="title">
+							Where can I get some5?
+						</div>
+						<div class="text">
+							<img src="../img/maincon/slidertext.png" alt="">
+						</div>
+						<div>
+							<a href="#">
+								<img src="../img/maincon/shopnow.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div></div>			
+			<div class="right flr">
+				<a href="javascript:mainconSliderCountUp();"><img src="../img/maincon/right.png" alt=""></a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="featured fll">
+				<div class="select">
+					<div class="flr">
+						<a href="javascript:featureItemCountDown()"><img src="../img/maincon/featureleft.png" alt=""></a>
+						<a href="javascript:featureItemCountUp()"><img src="../img/maincon/featureright.png" alt=""></a>
+					</div>
+				</div>
+				<div class="featureshow" id="featureshow"><div class="show" id="feature0"><div class="itemimg">
+							<img src="../img/maincon/shoe0.png" alt="">
+						</div><div><div class="fll">
+								<div class="title">
+									Herbal Sport0
+								</div>
+								<div class="price"><span class="final" name="finalprice">
+										$101.88
+									</span><span class="initial">
+										$69.99
+										<div></div>
+									</span>
+								</div></div>					
+							<div class="flr">
+								<a href="#"><img src="../img/maincon/buy.png" alt="" onclick="featureAddToCart(this)"></a>
+							</div>
+						</div>
+					</div><div class="hide" id="feature1">
+						<div class="itemimg">
+							<img src="../img/maincon/shoe1.png" alt="">
+						</div>
+						<div>
+							<div class="fll">
+								<div class="title">
+									Herbal Sport1
+								</div>
+								<div class="price">
+									<span class="final" name="finalprice">
+										$101.88
+									</span>
+									<span class="initial">
+										$69.99
+										<div></div>
+									</span>
+								</div>
+							</div>					
+							<div class="flr">
+								<a href="#"><img src="../img/maincon/buy.png" alt=""></a>
+							</div>
+						</div>
+					</div><div class="hide" id="feature2">
+						<div class="itemimg">
+							<img src="../img/maincon/shoe1.png" alt="">
+						</div>
+						<div>
+							<div class="fll">
+								<div class="title">
+									Herbal Sport2
+								</div>
+								<div class="price">
+									<span class="final" name="finalprice">
+										$101.88
+									</span>
+									<span class="initial">
+										$69.99
+										<div></div>
+									</span>
+								</div>
+							</div>					
+							<div class="flr">
+								<a href="#"><img src="../img/maincon/buy.png" alt=""></a>
+							</div>
+						</div>
+					</div><div class="hide" id="feature3">
+						<div class="itemimg">
+							<img src="../img/maincon/shoe1.png" alt="">
+						</div>
+						<div>
+							<div class="fll">
+								<div class="title">
+									Herbal Sport3
+								</div>
+								<div class="price">
+									<span class="final" name="finalprice">
+										$101.88
+									</span>
+									<span class="initial">
+										$69.99
+										<div></div>
+									</span>
+								</div>
+							</div>					
+							<div class="flr">
+								<a href="#"><img src="../img/maincon/buy.png" alt=""></a>
+							</div>
+						</div>
+					</div><div class="hide" id="feature4">
+						<div class="itemimg">
+							<img src="../img/maincon/shoe1.png" alt="">
+						</div>
+						<div>
+							<div class="fll">
+								<div class="title">
+									Herbal Sport4
+								</div>
+								<div class="price">
+									<span class="final" name="finalprice">
+										$101.88
+									</span>
+									<span class="initial">
+										$69.99
+										<div></div>
+									</span>
+								</div>
+							</div>					
+							<div class="flr">
+								<a href="#"><img src="../img/maincon/buy.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="newproducts flr">
+				<div class="title">
+					<img src="../img/maincon/newproducttitle.png" alt="">
+				</div>
+				<div class="itemlist">
+					<!-- 改变定位 -->
+					<div class="diffitem" id="newdiffitem">
+						<div id="item1" class="items">
+							<img src="../img/maincon/shoe1.png" alt="">
+							<div class="mt">
+								<div class="inf">
+									<div class="title">
+										Lorem ipsum dolor sit
+									</div>
+									<div class="price">
+										<span class="initial">
+											$69.99
+											<div></div>
+										</span>
+										<span class="final" name="finalprice">
+											$34.99
+										</span>
+									</div>
+								</div>
+								<div class="flr">
+									<a href="#"><img src="../img/maincon/buy.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div id="item2" class="items">
+							<img src="../img/maincon/shoe2.png" alt="">
+							<div class="mt">
+								<div class="inf">
+									<div class="title">
+										Lorem ipsum dolor sit
+									</div>
+									<div class="price">
+										<span class="final" name="finalprice">
+											$34.99
+										</span>
+									</div>
+								</div>
+								<div class="flr">
+									<a href="#"><img src="../img/maincon/buy.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div id="item3" class="items">
+							<img src="../img/maincon/shoe3.png" alt="">
+							<div class="mt">
+								<div class="inf">
+									<div class="title">
+										Lorem ipsum dolor sit
+									</div>
+									<div class="price">
+										<span class="final" name="finalprice">
+											$34.99
+										</span>
+									</div>
+								</div>
+								<div class="flr">
+									<a href="#"><img src="../img/maincon/buy.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div id="item4" class="items">
+							<img src="../img/maincon/shoe2.png" alt="">
+							<div class="mt">
+								<div class="inf">
+									<div class="title">
+										Lorem ipsum dolor sit
+									</div>
+									<div class="price">
+										<span class="final" name="finalprice">
+											$34.99
+										</span>
+									</div>
+								</div>
+								<div class="flr">
+									<a href="#"><img src="../img/maincon/buy.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div id="item5" class="items">
+							<img src="../img/maincon/shoe3.png" alt="">
+							<div class="mt">
+								<div class="inf">
+									<div class="title">
+										Lorem ipsum dolor sit
+									</div>
+									<div class="price">
+										<span class="final" name="finalprice">
+											$34.99
+										</span>
+									</div>
+								</div>
+								<div class="flr">
+									<a href="#"><img src="../img/maincon/buy.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div id="item6" class="items">
+							<img src="../img/maincon/shoe3.png" alt="">
+							<div class="mt">
+								<div class="inf">
+									<div class="title">
+										Lorem ipsum dolor sit6
+									</div>
+									<div class="price">
+										<span class="final" name="finalprice">
+											$34.99
+										</span>
+									</div>
+								</div>
+								<div class="flr">
+									<a href="#"><img src="../img/maincon/buy.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<input type="range" id="itemslider" value="0">
+				</div>
+			</div>
+		</div>
+		<div class="trend">
+			<div class="typelist fll">
+				<div class="title">
+					<img src="../img/maincon/trendtitle.png" alt="">
+				</div>
+				<ul id="trendtypelist" onmouseover="trendlistchange()"><li>
+						<div class="arc">
+							<img src="../img/maincon/trendlistarc.png" alt="">
+						</div>
+						<a href="#">Man</a>
+						<div class="arrow">
+							<img src="../img/maincon/trendlistarrow.png" alt="">
+						</div>
+					</li><li>
+						<div class="arc">
+							<img src="../img/maincon/trendlistarc.png" alt="">
+						</div>
+						<a href="#">Women</a>
+						<div class="arrow">
+							<img src="../img/maincon/trendlistarrow.png" alt="">
+						</div>
+					</li><li>
+						<div class="arc">
+							<img src="../img/maincon/trendlistarc.png" alt="">
+						</div>
+						<a href="#">Kids</a>
+						<div class="arrow">
+							<img src="../img/maincon/trendlistarrow.png" alt="">
+						</div>
+					</li><li>
+						<div class="arc">
+							<img src="../img/maincon/trendlistarc.png" alt="">
+						</div>
+						<a href="#">Accessories</a>
+						<div class="arrow">
+							<img src="../img/maincon/trendlistarrow.png" alt="">
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="itemshow flr" id="trenditem"><div class="itemintro">
+					<div class="showitem fll">
+						<div class="fll">
+							<img src="../img/maincon/trendman1.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Shop t-shirt
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="initial">
+									$34.99
+									<div></div>
+								</span>
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+					<div class="showitem flr">
+						<div class="fll">
+							<img src="../img/maincon/trendman2.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Sneaker
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+					<div class="showitem fll">
+						<div class="fll">
+							<img src="../img/maincon/trendman3.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Backpack
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+					<div class="showitem flr">
+						<div class="fll">
+							<img src="../img/maincon/trendman2.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Heritage
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+				</div><div class="itemintro">
+					<div class="showitem fll">
+						<div class="fll">
+							<img src="../img/maincon/women1.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Shop t-shirt
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="initial">
+									$34.99
+									<div></div>
+								</span>
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+					<div class="showitem flr">
+						<div class="fll">
+							<img src="../img/maincon/women2.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Sneaker
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+					<div class="showitem fll">
+						<div class="fll">
+							<img src="../img/maincon/women3.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Backpack
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+					<div class="showitem flr">
+						<div class="fll">
+							<img src="../img/maincon/women4.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Heritage
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+				</div><div class="itemintro">
+					<div class="showitem fll">
+						<div class="fll">
+							<img src="../img/maincon/kid1.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Shop t-shirt
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="initial">
+									$34.99
+									<div></div>
+								</span>
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+					<div class="showitem flr">
+						<div class="fll">
+							<img src="../img/maincon/kid2.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Sneaker
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+					<div class="showitem fll">
+						<div class="fll">
+							<img src="../img/maincon/kid3.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Backpack
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+					<div class="showitem flr">
+						<div class="fll">
+							<img src="../img/maincon/kid4.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Heritage
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+				</div><div class="itemintro">
+					<div class="showitem fll">
+						<div class="fll">
+							<img src="../img/maincon/accessory1.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Shop t-shirt
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="initial">
+									$34.99
+									<div></div>
+								</span>
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+					<div class="showitem flr">
+						<div class="fll">
+							<img src="../img/maincon/accessory2.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Sneaker
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+					<div class="showitem fll">
+						<div class="fll">
+							<img src="../img/maincon/accessory3.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Backpack
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+					<div class="showitem flr">
+						<div class="fll">
+							<img src="../img/maincon/accessory4.png" alt="">
+						</div>
+						<div class="flr">
+							<div class="title">
+								Heritage
+							</div>
+							<div class="intro">
+								Lorem ipsum dolor sitamet,consectetuer
+							</div>
+							<div class="price">
+								<span class="final" name="finalprice">
+									$34.99
+								</span>
+							</div>
+							<a href="#"><img src="../img/maincon/addtocart.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="footer">
-		
+		<div class="othlogo">
+			<div class="lbtn">
+				<a href="javascript:logoleft();"><img src="../img/footer/left.png" alt=""></a>
+			</div>
+			<div class="logoimg" id="logoslider"><img src="../img/footer/otherlogo.png" alt="">
+			</div>
+			<div class="rbtn">
+				<a href="javascript:logoright();"><img src="../img/footer/right.png" alt=""></a>
+			</div>
+		</div>
+		<div class="relativeinf">
+			<div class="about">
+				<div class="title">Who We Are</div>
+				<div class="con">
+					<img src="../img/footer/aboutcon.png" alt="">
+				</div>
+				<div class="moreinf">
+					<img src="../img/footer/address.png" alt="">
+					<span>Adress 123,Country</span>
+				</div>
+				<div class="moreinf">
+					<img src="../img/footer/tel.png" alt="">
+					<span>(043)875-9211</span>
+				</div>
+				<div class="moreinf">
+					<img src="../img/footer/mail.png" alt="">
+					<span>info@kopasoft.com</span>
+				</div>
+			</div>
+			<div class="categories">
+				<div class="title">
+					Categories
+				</div>
+				<ul class="fll">
+					<li><a href="#">New collection</a></li>
+					<li><a href="#">Best sellers</a></li>
+					<li><a href="#">Manufacturers</a></li>
+					<li><a href="#">Suppliers</a></li>
+					<li><a href="#">New Products</a></li>
+				</ul>
+				<ul class="flr">
+					<li><a href="#">New collection</a></li>
+					<li><a href="#">Best sellers</a></li>
+					<li><a href="#">Manufacturers</a></li>
+					<li><a href="#">Suppliers</a></li>
+					<li><a href="#">New Products</a></li>
+				</ul>
+			</div>
+			<div class="tweet">
+				<div class="title">
+					Latest Tweet
+				</div>
+				<div class="tweetcon">
+					<img src="../img/footer/tweet.png" alt="">
+					<div class="con flr">
+						<div class="text">
+							sdfsdfdasfsdfsdfsdfsdfsdfsadsdfskdl;fk;ssdjfl;sdajfl;sdjfsal;
+						</div>
+						<div class="time">
+							2 hours ago
+						</div>
+					</div>
+				</div>
+				<div class="tweetcon">
+					<img src="../img/footer/tweet.png" alt="">
+					<div class="con flr">
+						<div class="text">
+							sdfsdfdasfsdfsdfsdfsdfsdfsadsdfskdl;fk;ssdjfl;sdajfl;sdjfsal;
+						</div>
+						<div class="time">
+							2 hours ago
+						</div>
+					</div>
+				</div>
+				<div class="tweetcon">
+					<img src="../img/footer/tweet.png" alt="">
+					<div class="con flr">
+						<div class="text">
+							sdfsdfdasfsdfsdfsdfsdfsdfsadsdfskdl;fk;ssdjfl;sdajfl;sdjfsal;
+						</div>
+						<div class="time">
+							2 hours ago
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="center">
+			<div class="inf">
+				Copyrights. &copy 2012 by KOPASOFT
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">My Cart</a></li>
+					<li><a href="#">Checkout</a></li>
+					<li><a href="#">Completed Orders</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</div>
+		</div>		
 	</div>
 	<script src="../js/index.js"></script>
 </body>
